@@ -1,0 +1,124 @@
+@import "../base/variable.scss";
+a{
+    text-decoration: none;
+}
+@mixin underline {
+    &::after{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #D2D5D5;
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+    }    
+}
+.chart{
+    .container{
+        @media screen and (max-width : 1900px) {
+            max-width: 985px;
+            padding-bottom: 30px;
+            .chart-grid{
+                
+                display: grid;
+                grid-template-columns: 64% 33%;
+                grid-template-rows: 360px;
+                gap: 27px;
+                .sale{
+                    .navbar{
+                        position: relative;
+                        @include underline;
+                        background-color: $Lotion;
+                        height: 50px;
+                        .product{
+                            a{
+                                color: $Dim-Gray;
+                                span{
+                                    
+                                    font-size: 14px;
+                                     margin-right: 5px;
+                                }
+                                .arrow{
+                                    font-size: 13px;
+                                    margin-bottom: 3px;
+                                }
+                            }
+                        }
+                        .navbar-right{
+                            a{
+                                color: $Dim-Gray;
+                                span{
+                                    color: $Dim-Gray;
+                                    font-size: 13px;
+                                    margin-right: 10px;
+                                    &:hover{
+                                        color: $primary;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .team{
+                    .navbar{
+                        background-color: $Lotion;  
+                        height: 50px;
+                        position: relative;
+                        @include underline;
+                        span{
+                            font-size: 14px;
+                            color: $Dim-Gray;
+                        }
+                        a{
+                            color: $Dim-Gray;
+                        }
+                    }
+                    .name-list{
+                        position: relative;
+                        @include underline;
+                        height: 265px;
+                        display: grid;
+                        grid-template-rows: repeat(4, 1fr);
+                        grid-template-columns: auto;
+                        gap: 20px;
+                        .content{
+                            .crycle{
+                                height: 40px;
+                                width: 40px;
+                                border-radius: 50%;
+                                background-color: aqua;
+                            }
+                            span{
+                                font-size: 16px;
+                                color: $dark-silver;
+                            }
+                        }
+
+                    }
+                    .view{
+                        padding-top: 10px;
+                        .text{
+                            font-size: 16px;
+                            color: $Dark-Gray;
+                        }
+                        .badges {
+                            background-color: $primary;
+                            border-radius: 7px;
+                            margin-left: 134px;
+                            line-height: 1;
+                            color: white;
+                            padding: 3px 5px;
+                            vertical-align: middle;
+                            font-weight: 400;
+                            font-size: 14px;
+                            border: 1px solid $primary;
+                        }
+                    }
+                }
+                
+            
+            }
+        }
+    }
+}

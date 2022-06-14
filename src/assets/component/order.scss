@@ -1,0 +1,234 @@
+@import "../base/variable.scss";
+@mixin underline {
+    &::after{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #D2D5D5;
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+    }    
+}
+@mixin icon-underline {
+    content: "";
+    display: block;
+    width: 46%;
+    right: 27%;
+    height: 1px;
+    background-color: #D2D5D5;
+    position: absolute;
+    bottom: -1px;
+}
+.order{
+    .container{
+        @media screen and (max-width : 1900px) {
+            max-width: 985px;
+            padding-bottom: 30px;
+            .order-grid{
+                display: grid;
+                grid-template-columns: 64% 33%;
+                grid-template-rows: 380px;
+                gap: 27px;
+                .recent{
+                    .navbar{
+                        position: relative;
+                        @include underline;
+                        background-color: $Lotion;
+                        height: 50px;
+                        .product{
+                            a{
+                                color: $Dim-Gray;
+                                span{
+                                    
+                                    font-size: 14px;
+                                     margin-right: 5px;
+                                }
+                                .arrow{
+                                    font-size: 13px;
+                                    margin-bottom: 3px;
+                                }
+                            }
+                            a{
+                                color: $Dim-Gray;
+                            }
+                    
+                        }
+                        a{
+                            color: $Dim-Gray;
+                        }
+                    }
+                    .table-content{
+                        .table{
+                            tr{
+                                color: $dark-silver;
+                                th{
+                                    font-size: 13px; 
+                                
+                                }
+                                img{
+                                    margin-right: 12px;
+                                    height: 50px;
+                                    width: 40px;
+                                    object-fit: cover;
+                                }
+                               
+                                td{
+                                    padding: 10px 0.5rem;
+                                    border-bottom-width: 0;
+                                    font-size: 13px;
+                                    height: 74px;
+                                    position: relative;
+                                   
+                                    span{
+                                        position: absolute;
+                                        top: 35%;
+                                    }
+
+                                    
+                                    .badges {
+                                        background-color: $Dark-Lemon;
+                                        border-radius: 25px;
+                                        // margin-left: 134px;
+                                        line-height: 1;
+                                        color: white;
+                                        padding: 1px 5px;
+                                        vertical-align: middle;
+                                        font-weight: 400;
+                                        font-size: 13px;
+                                        border: 1px solid $Dark-Lemon;
+                                    }
+                                    .failed{
+                                        background-color: #74736f;
+                                        border: 1px solid #74736f;
+                                    }
+                                }                                
+                            }
+                        }
+                    }       
+                }
+                .weakly-grid{
+                    display: grid;
+                    grid-template-rows: repeat(2, 1fr);
+                    grid-template-columns: 100%;
+
+                    gap: 30px;
+                    .income{
+                        display: grid;
+                        grid-template-rows: repeat(2, 1fr);
+                        grid-template-columns: 100%;
+
+                        .celender{
+                            .days{
+                                span{
+                                    color: $Philippine-Gray;
+                                    margin-right: 17px;
+                                    font-size: 13px;
+                                }                                
+                            }
+                            .text{
+                                line-height: 19px;
+                                bottom: 0;
+                                left: 10px;
+                            
+                                span{
+                                    color: $quick-silver;
+                                    font-size: 14px;
+                                }
+                                p{
+                                    color: $dark-silver;
+                                    font-size: 16px;
+                                }
+                            }
+                            .date{
+                                color: $dark-silver;
+                                font-size: 13px;
+                                position: absolute;
+                                bottom: 0;
+                                right: 10px;
+                                .arrow{
+                                    margin-bottom: 2px;
+                                }
+                            }
+                        }
+
+                    }
+                    .weather-grid{
+                        display: grid;
+                        grid-template-rows: 100% ;
+                        grid-template-columns: 75% 25%;
+                        .weather{
+                            background: linear-gradient(0deg, #55c0a3cb,#55c0a3cb), url("/src/assets/img/order/weather/weather.jpg");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center;
+                            .top-left{
+                                font-size: 14px;
+                                position: absolute;
+                                top: 18px;
+                                left: 15px;
+                                .location{
+                                    margin-right: 1px;
+                                }
+                            }
+                            .top-right{
+                                font-size: 13px;
+                                position: absolute;
+                                top: 18px;
+                                right: 15px;
+                            }
+                            .sun{
+                                position: absolute;
+                                font-size: 60px;
+                                bottom: 28px;
+                                left: 8px;
+                            }
+                            .text{
+                                position: absolute;
+                                font-size: 15px;
+                                bottom: 28px;
+                                right:  15px;
+                            }
+                            .degree{
+                                position: absolute;
+                                font-size: 62px;
+                                bottom: 28px;
+                                right:  15px;
+                            }
+                        
+                        }
+                        .icon-grid{
+                            display: grid;
+                            grid-template-rows: repeat(3, 1fr);
+                            grid-template-columns: 100%;
+                            .weather-icon{
+                                color: $quick-silver;
+                                &::after{
+                                    @include icon-underline;
+
+                                }
+                                .icon{
+                                    font-size: 30px;
+                                    position: absolute;
+                                    right: 30%;
+                                    top: 8px;
+                                }
+                                p{
+                                    position: absolute;
+                                    left: 31%;
+                                    bottom: 0;
+                                    font-size: 13px;
+                                }
+                                
+                            }
+                            .mon{
+                                color: $dark-silver;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

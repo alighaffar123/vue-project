@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&family=Roboto&display=swap');
+@import "../base/variable.scss";
+
+* {
+    font-family: 'Open Sans';
+}
+.main-content{
+    width: calc(100% - 285px);
+    margin-left: auto;
+    position: absolute;
+    display: inline-block;
+    .inner-content{
+        background-color: $Flash-White;
+        
+    }
+
+}

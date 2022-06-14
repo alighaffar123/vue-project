@@ -1,0 +1,164 @@
+@import "../base/variable.scss";
+
+@mixin nav-line {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 58px;
+    background-color: $light-Gray;
+    position: absolute;
+    top: -15px;
+    right: 0;
+}
+
+
+.nav-bar {
+    &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: $light-Gray;
+        position: absolute;
+        bottom: -1px;
+    }
+    background-color: $white;
+    height: 58px;
+
+    .container {
+        color: $Davy-Grey;
+
+        @media screen and (max-width : 1900px) {
+            max-width: 985px;
+
+            .menu {
+
+                a {
+                    color: $Davy-Grey;
+                    font-size: 20px;
+
+                    &::before {
+                        content: "";
+                        display: block;
+                        width: 1px;
+                        height: 58px;
+                        background-color: $light-Gray;
+                        position: absolute;
+                        margin-top: -15px;
+                        margin-left: 44px;
+                    }
+                }
+
+            }
+
+            .eng {
+                padding: 0 19px;
+                position: relative;
+
+                span {
+                    font-size: 19px;
+                }
+
+                a {
+                    color: $Davy-Grey;
+                    font-size: 19px;
+
+                }
+
+                &::after {
+                    @include nav-line;
+                }
+            }
+
+            .search {
+                position: relative;
+                padding: 0 19px;
+
+                a {
+                    color: $Davy-Grey;
+                    font-size: 21px;
+                }
+
+                .bell {
+                    margin-left: 208px;
+                    position: relative;
+                    .badge{
+                        padding: 2px 9px;
+                        font-size: 14px;
+                        background-color: $Vivid;
+                    }
+                }
+
+                &::after {
+                    @include nav-line;
+                    top: -14px;
+
+                }
+            }
+
+            .envelope {
+                padding: 0 19px;
+                position: relative;
+                a {
+                    color: $Davy-Grey;
+                    font-size: 25px;
+                    .badge{
+                        padding: 2px 9px;
+                        font-size: 14px;
+                        background-color: $Vivid;
+                        transform: translate(-50%, -20%);
+                        left: 70%;
+                        background-color: $primary;
+                    }
+                }
+                &::after {
+                    @include nav-line;
+                    top: -11px;
+                }
+            }
+
+            .bar {
+                padding: 0 19px;
+                position: relative;
+                a {
+                    color: $Davy-Grey;
+                    font-size: 25px;
+                    .badge{
+                        padding: 2px 9px;
+                        font-size: 14px;
+                        background-color: $Vivid;
+                        transform: translate(-50%, -20%);
+                        left: 70%;
+                        background-color: $Dark-Lemon;
+                    }
+                }
+                &::after {
+                    @include nav-line;
+                    top: -10px;
+                }
+            }
+            .hungf{
+                padding-left: 19px;
+                position: relative;
+                img{
+                    height: 40px;
+                    width: 40px;
+                    object-fit: cover;
+                }
+                span{
+                    color: $Davy-Grey;
+                    margin-left: 15px;
+                    font-size: 18px;
+
+                }
+                .arrow{
+                    color: #656766;
+                    margin-left: 30px;
+                    font-size: 20px;
+                }
+            }
+
+
+        }
+    }
+}

@@ -1,0 +1,132 @@
+@import "../base/variable.scss";
+.sidebar {
+    height: 1448px;
+    width: 285px;
+    background-color: $olive;
+
+    .logo {
+        height: 58px;
+        color: $white;
+        background-color: $primary;
+        padding: 15px 41px;
+
+        .fa-home {
+            font-size: 21px;
+            margin-bottom: 3px;
+        }
+
+        h2 {
+            font-size: 25px;
+        }
+    }
+
+    .collapes-section {
+        padding-top: 30px;
+
+        ul {
+            list-style-type: none;
+            color: $Dark-Gray;
+            padding: 0;
+
+            .collapes-heading {
+                padding: 0 19px;
+                font-size: 20px;
+                margin: 29px 0 11px
+            }
+
+            .collapes {
+                position: relative;
+                padding: 17px 0;
+
+                &:hover {
+                    background-color: $Black-Olive;
+                    font-weight: bold;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 295px;
+                    height: 1px;
+                    right: 0;
+                    bottom: 0;
+                    background: $Black-Olive;
+                }
+
+                a {
+
+                    font-size: 21px;
+                    color: $Dark-Gray;
+                    padding: 0 19px;
+
+                    .collapes-fi {
+                        font-size: 21px;
+                        width: 25px;
+                    }
+
+                    p {
+                        font-size: 19px;
+                        margin-left: 30px;
+                        margin-bottom: 0;
+                    }
+                    
+
+                    .badges {
+                        background-color: $Vivid;
+                        border-radius: 50px;
+                        margin-left: auto;
+                        line-height: 1;
+                        color: white;
+                        padding: 3px 5px;
+                        vertical-align: middle;
+                        font-weight: 400;
+                        font-size: 14px;
+                        border: 1px solid $Vivid;
+                    }
+
+                    .collapes-arrow {
+                        font-size: 18px;
+                    }
+
+                }
+            }
+            .milestone{
+                padding: 60px 19px 20px;
+                color: $Bright-Gray;
+                p{
+                    font-size: 16px;
+                }
+                .progress{
+                    border-radius: 2px; 
+                    height: 7px;
+                    width: 212px;
+                }
+                .progress-bar{
+                    width: 55%;
+                    background-color: $Dark-Lemon;
+
+                }
+
+            }
+            .release{
+                padding: 1px 19px 60px;
+                color: $Bright-Gray;
+                p{
+                    font-size: 16px;
+                }
+                .progress{
+                    border-radius: 2px;
+                    height: 7px;
+                    width: 212px;
+                }
+                .progress-bar{
+                    width: 75%;
+                    background-color: $Light-Sea;
+
+                }
+
+            }
+        }
+    }
+
+}

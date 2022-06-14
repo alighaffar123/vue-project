@@ -1,0 +1,102 @@
+@import "../base/variable.scss";
+@mixin cardInner-grid{
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+.ecommerce{
+    .container{
+        @media screen and (max-width : 1900px) {
+            max-width: 985px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            
+            h2{
+                color: $space-gray;
+                font-size: 21px;
+                font-weight: bold;
+                margin-bottom: 30px;
+            }
+            .grid-cards{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 75px;
+                gap: 24px;
+                .sales{
+                    @include cardInner-grid;
+                    .icon{
+                        background-color: $primary;
+                    }
+                    .text{
+                        padding: 18px 0 18px 7px;
+                        line-height: 15px;
+                        h4{
+                            font-size: 20px;
+                            color: $Dim-Gray;
+                        }
+                        i{
+                            font-size: 14px;
+                            color: $Crayola;
+                        }
+                    }
+
+                }
+                .order{
+                    @include cardInner-grid;
+                    .icon{
+                        background-color: $Vivid;
+                    }
+                    .text{
+                        padding: 18px 0 18px 7px;
+                        line-height: 15px;
+                        h4{
+                            font-size: 20px;
+                            color: $Dim-Gray;
+                        }
+                        i{
+                            font-size: 14px;
+                            color: $Crayola;
+                        }
+                    }
+                }
+                .products{
+                    @include cardInner-grid;
+                    .icon{
+                        background-color: $Dark-Lemon;
+                    }
+                    .text{
+                        padding: 18px 0 18px 7px;
+                        line-height: 15px;
+                        h4{
+                            font-size: 20px;
+                            color: $Dim-Gray;
+                        }
+                        i{
+                            font-size: 14px;
+                            color: $Crayola;
+                        }
+                    }
+                }
+                .visitors{
+                    @include cardInner-grid;
+                    .icon{
+                        background-color: $Light-Sea;
+                    }
+                    .text{
+                        padding: 18px 0 18px 7px;
+                        line-height: 15px;
+                        h4{
+                            font-size: 20px;
+                            color: $Dim-Gray;
+                        }
+                        i{
+                            font-size: 14px;
+                            color: $Crayola;
+                        }
+                    }
+                }
+            
+            }
+            
+        }
+    }
+}
