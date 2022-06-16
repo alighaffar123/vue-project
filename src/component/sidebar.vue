@@ -1,5 +1,5 @@
 <template>
-  <aside class="sidebar d-inline-block">
+  <aside class="sidebar ">
     <div class="logo">
       <fa class="fa-home me-2" icon="home" />
       <h2 class="fw-bold d-inline-block m-0">H.Dashboard</h2>
@@ -127,5 +127,5 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-  @import "../assets/component/sidebar.scss";
+@import '/src/assets/scss/component/sidebar.scss';
 </style>

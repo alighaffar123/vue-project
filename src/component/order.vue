@@ -14,16 +14,16 @@
                     <fa icon="xmark" class="xmark ms-3 fs-5"/>
                 </a>
             </div>  
-            <div class="px-3 table-content">
+            <div class="px-3 table-content overflow-auto">
                 <table class="table">
                     <tbody>
                         <tr class="headding">
-                            <th class="ps-0">Image</th>
-                            <th>Product Code</th>
-                            <th>Custmer</th>
-                            <th>Purchased On</th>
-                            <th>Status</th>
-                            <th>Tracking No#</th>
+                            <th class="ps-0 text-start">Image</th>
+                            <th class="text-start">Product Code</th>
+                            <th class="text-start">Custmer</th>
+                            <th class="text-start">Purchased On</th>
+                            <th class="text-start">Status</th>
+                            <th class="text-start">Tracking No#</th>
                         </tr>
                         <tr>
                             <td class="img ps-0">
@@ -163,20 +163,12 @@
 
         </div>
         <div class="weakly-grid">
-            <div class="income p-2 bg-white">
+            <div class="income bg-white">
                 <div class="chart ">
                 </div>
-                <div class="celender position-relative">
-                    <div class=" days mx-4">
-                        <span >Sun</span>
-                        <span >Mun</span>
-                        <span >Tue</span>
-                        <span >wed</span>
-                        <span >thu</span>
-                        <span >fri</span>
-                        <span >sat</span>
-                    </div>
-                    <div class="position-absolute d-inline-block text">
+                <div class="celender p-2 pt-0 position-relative">
+
+                    <div class="position-absolute fw-bold d-inline-block text">
                         <span>Weekly Income</span>
                         <p class="fw-bold m-0">$10,000.00</p>
                     </div>
@@ -206,15 +198,15 @@
                     </div>
                 </div>
                 <div class="icon-grid">
-                    <div class="weather-icon mon position-relative">
+                    <div class=" mon position-relative d-flex justify-content-center flex-column align-items-center">
                         <fa icon="cloud-sun" class="icon"/>
                         <p class="day m-0">MON</p>
                     </div>
-                   <div class="weather-icon position-relative">
+                   <div class="tue position-relative d-flex justify-content-center flex-column align-items-center">
                         <fa icon="cloud" class="icon"/>
                         <p class="day m-0">TUE</p>
                     </div>
-                    <div class="weather-icon position-relative">
+                    <div class="wed  d-flex justify-content-center flex-column align-items-center">
                         <fa icon="sun" class="icon"/>
                         <p class="day m-0">WED</p>
                     </div>
@@ -232,5 +224,5 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import "../assets/component/order.scss";
+@import '/src/assets/scss/component/order.scss';
 </style>

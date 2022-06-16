@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&family=Roboto&display=swap');
-@import "../base/variable.scss";
+@import '/src/assets/scss/base/variable.scss';
 
 * {
     font-family: 'Open Sans';
@@ -9,9 +9,13 @@
     margin-left: auto;
     position: absolute;
     display: inline-block;
-    .inner-content{
-        background-color: $Flash-White;
-        
+    
+   
+    @media screen and (max-width : 1150px) {
+        width: 100%;
+        margin-left: 0;
+        position: none;
+        display: block;
     }
 
 }

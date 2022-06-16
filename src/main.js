@@ -1,4 +1,4 @@
-import "bootstrap/dist/css/bootstrap.css"
+import "@/assets/scss/custom-bootstarap.scss";
 import { createApp } from 'vue'
 import router from "./router/router";
 import { library } from "@fortawesome/fontawesome-svg-core";

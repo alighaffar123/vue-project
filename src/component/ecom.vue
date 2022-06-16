@@ -1,14 +1,14 @@
 <template>
     <div class="ecommerce ">
         <div class="container">
-            <h2>Ecommerce Overview</h2>
+            <h3>Ecommerce Overview</h3>
             <div class="grid-cards">
                 <div class="sales shadow-sm ">
                     <div class="icon d-flex justify-content-center align-items-center">
                        <fa icon="scale-balanced" class="text-white fs-1" />
                     </div>
                     <div class="text bg-white">
-                        <h4 class="fw-bold m-0">
+                        <h4 class="fw-bold mb-1">
                             $4,590
                         </h4>
                         <i>Last month sale</i>
@@ -19,7 +19,7 @@
                         <fa icon="arrow-down" class="text-white fs-1" />
                     </div>
                     <div class="text bg-white">
-                        <h4 class="fw-bold m-0">
+                        <h4 class="fw-bold mb-1">
                             360
                         </h4>
                         <i>New order recceived</i>
@@ -31,7 +31,7 @@
                        <fa icon="cart-shopping" class="text-white fs-1 fs-1" />
                     </div>
                     <div class="text bg-white">
-                        <h4 class="fw-bold m-0">
+                        <h4 class="fw-bold mb-1">
                             1,680
                         </h4>
                         <i>Total products</i>
@@ -43,7 +43,7 @@
                        <fa icon="eye" class="text-white fs-1" />
                     </div>
                     <div class="text bg-white">
-                        <h4 class="fw-bold m-0">
+                        <h4 class="fw-bold mb-1">
                             1,10,500
                         </h4>
                         <i>Unigue visiters</i>
@@ -62,5 +62,5 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import "../assets/component/ecom.scss";
+@import '/src/assets/scss/component/ecom.scss';
 </style>

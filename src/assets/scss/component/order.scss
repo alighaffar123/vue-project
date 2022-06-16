@@ -1,4 +1,4 @@
-@import "../base/variable.scss";
+@import '/src/assets/scss/base/variable.scss';
 @mixin underline {
     &::after{
         content: "";
@@ -21,11 +21,12 @@
     position: absolute;
     bottom: -1px;
 }
+
 .order{
     .container{
         @media screen and (max-width : 1900px) {
-            max-width: 985px;
-            padding-bottom: 30px;
+            max-width: 100%;
+            padding:0 30px 30px ;
             .order-grid{
                 display: grid;
                 grid-template-columns: 64% 33%;
@@ -56,7 +57,7 @@
                     
                         }
                         a{
-                            color: $Dim-Gray;
+                            color: $Crayola;
                         }
                     }
                     .table-content{
@@ -118,6 +119,7 @@
                         display: grid;
                         grid-template-rows: repeat(2, 1fr);
                         grid-template-columns: 100%;
+                   
 
                         .celender{
                             .days{
@@ -129,7 +131,7 @@
                             }
                             .text{
                                 line-height: 19px;
-                                bottom: 0;
+                                bottom: 5px;
                                 left: 10px;
                             
                                 span{
@@ -145,7 +147,7 @@
                                 color: $dark-silver;
                                 font-size: 13px;
                                 position: absolute;
-                                bottom: 0;
+                                bottom: 12px;
                                 right: 10px;
                                 .arrow{
                                     margin-bottom: 2px;
@@ -193,7 +195,7 @@
                             .degree{
                                 position: absolute;
                                 font-size: 62px;
-                                bottom: 28px;
+                                bottom: 34px;
                                 right:  15px;
                             }
                         
@@ -202,7 +204,23 @@
                             display: grid;
                             grid-template-rows: repeat(3, 1fr);
                             grid-template-columns: 100%;
-                            .weather-icon{
+                            .mon{
+                                color: $dark-silver;
+                                &::after{
+                                    @include icon-underline;
+
+                                }
+                                .icon{
+                                    font-size: 30px;
+                                  
+                                }
+                                p{
+                                   
+                                    font-size: 13px;
+                                }
+                                
+                            }
+                            .tue{
                                 color: $quick-silver;
                                 &::after{
                                     @include icon-underline;
@@ -210,25 +228,73 @@
                                 }
                                 .icon{
                                     font-size: 30px;
-                                    position: absolute;
-                                    right: 30%;
-                                    top: 8px;
+                                  
                                 }
                                 p{
-                                    position: absolute;
-                                    left: 31%;
-                                    bottom: 0;
+                                   
                                     font-size: 13px;
                                 }
                                 
                             }
-                            .mon{
-                                color: $dark-silver;
+                            .wed{
+                                color: $quick-silver;
+                                .icon{
+                                    font-size: 30px;
+                                  
+                                }
+                                p{
+                                   
+                                    font-size: 13px;
+                                }
+                                
                             }
+                            
                         }
                     }
                 }
             }
         }
+        @media screen and (max-width : 992px) {
+            .order-grid{
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: 380px 190px;
+                gap: 27px;
+            }
+            .order-grid{
+                .weakly-grid{
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: 100%;
+                }
+            }
+        }
+        @media screen and (max-width : 768px) {
+            max-width: 100%;
+        }
+        @media screen and (max-width : 605px) {
+            .order-grid{
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: 380px 350px;
+                gap: 27px;
+            }
+            .order-grid{
+                .weakly-grid{
+                    grid-template-columns: 100%;
+                    grid-template-rows: repeat(2, 1fr);
+                }
+            }
+        }
+        @media screen and (max-width : 583px) {
+            .order-grid{
+              
+                grid-template-rows: 425px 350px;
+                gap: 25px;
+            }
+        }
+        @media screen and (max-width : 576px) {
+            max-width: 100%;
+            padding:0 20px 20px ;
+        } 
     }
 }

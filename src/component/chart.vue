@@ -11,7 +11,8 @@
                             </a>
                         </div>
                         <div class="navbar-right">
-                            <a href="">
+                            <div class="days">
+                             <a href="">
                                 <span>
                                     Daily
                                 </span>
@@ -30,7 +31,8 @@
                                 <span>
                                     Yearly
                                 </span>
-                            </a>
+                            </a>                               
+                            </div>
                             <a href="">
                                 <fa icon="chevron-down" class="chevron-down ms-3 fs-6"/>
                                 
@@ -41,6 +43,9 @@
                                 <fa icon="xmark" class="xmark ms-3 fs-5"/>
                             </a>
                         </div>
+                    </div>
+                    <div class="clothes">
+                        
                     </div>
                 </div>
                 <div class="team shadow-sm bg-white" >
@@ -90,5 +95,5 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import "../assets/component/chart.scss";
+@import '/src/assets/scss/component/chart.scss';
 </style>

@@ -1,0 +1,123 @@
+@import '/src/assets/scss/base/variable.scss';
+@import '/src/assets/scss/main.scss';
+@mixin cardInner-grid{
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+.ecommerce{
+    .container{
+        @media screen and (max-width : 1900px) {
+            max-width: 100%;
+            padding: 30px;
+
+            h3{
+                color: $space-gray;
+                font-weight: bold;
+                margin-bottom: 30px;
+            }
+            .grid-cards{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 75px;
+                gap: 24px;
+                h4{
+                    color: $Dim-Gray;
+                }
+                .sales{
+                    @include cardInner-grid;
+                    .icon{
+                        background-color: $primary;
+                    }
+                    .text{
+                        padding: 18px 0 18px 7px;
+                        line-height: 15px;
+
+                        i{
+
+                        
+                            font-size: 14px;
+                            color: $Crayola;
+                        }
+                    }
+
+                }
+                .order{
+                    @include cardInner-grid;
+                    .icon{
+                        background-color: $Vivid;
+                    }
+                    .text{
+                        padding: 18px 0 18px 7px;
+                        line-height: 15px;
+
+                        i{
+                            font-size: 14px;
+                            color: $Crayola;
+                        }
+                    }
+                }
+                .products{
+                    @include cardInner-grid;
+                    .icon{
+                        background-color: $Dark-Lemon;
+                    }
+                    .text{
+                        padding: 18px 0 18px 7px;
+                        line-height: 15px;
+
+                        i{
+                            font-size: 14px;
+                            color: $Crayola;
+                        }
+                    }
+                }
+                .visitors{
+                    @include cardInner-grid;
+                    .icon{
+                        background-color: $Light-Sea;
+                    }
+                    .text{
+                        padding: 18px 0 18px 7px;
+                        line-height: 15px;
+
+                        i{
+                            font-size: 14px;
+                            color: $Crayola;
+                        }
+                    }
+                }
+            
+            }
+            
+        }
+        @media screen and (max-width : 992px) {
+            max-width: 100%;
+        }
+        @media screen and (max-width : 768px) {
+            .grid-cards{
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 75px);
+            }
+        }
+        @media screen and (max-width : 618px) {
+            
+        } 
+        @media screen and (max-width : 576px) {
+            max-width: 100%;
+            padding: 20px;
+            h3{
+                margin-bottom: 20px;
+            }
+        } 
+        @media screen and (max-width : 405px) {
+            
+            .grid-cards{
+                grid-template-columns: 100%;
+                grid-template-rows: repeat(4, 75px);
+                gap: 20px;
+            }
+                       
+
+        } 
+    }
+}

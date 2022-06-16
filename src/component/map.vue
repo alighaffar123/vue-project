@@ -18,9 +18,9 @@
                     <fa icon="xmark" class="xmark "/>
                 </a>
                 <div class="text">
-                     <h4>
+                     <h5>
                     SALES MONITER
-                </h4>
+                </h5>
                 <p>
                     Easyto review sales  activies by the world map to the improve markit planing
                 </p>
@@ -72,5 +72,5 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import "../assets/component/map.scss";
+@import '/src/assets/scss/component/map.scss';
 </style>

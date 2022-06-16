@@ -1,4 +1,4 @@
-@import "../base/variable.scss";
+@import '/src/assets/scss/base/variable.scss';
 a{
     text-decoration: none;
 }
@@ -17,8 +17,8 @@ a{
 .chart{
     .container{
         @media screen and (max-width : 1900px) {
-            max-width: 985px;
-            padding-bottom: 30px;
+            max-width: 100%;
+            padding:0 30px 30px;
             .chart-grid{
                 
                 display: grid;
@@ -27,6 +27,7 @@ a{
                 gap: 27px;
                 .sale{
                     .navbar{
+                        margin-bottom: 5px;
                         position: relative;
                         @include underline;
                         background-color: $Lotion;
@@ -46,18 +47,33 @@ a{
                             }
                         }
                         .navbar-right{
-                            a{
-                                color: $Dim-Gray;
-                                span{
+                            .days{
+                                display: inline;
+                                a{
                                     color: $Dim-Gray;
-                                    font-size: 13px;
-                                    margin-right: 10px;
-                                    &:hover{
-                                        color: $primary;
+                                    span{
+                                        color: $Crayola;
+                                        font-size: 13px;
+                                        margin-right: 10px;
+                                        &:hover{
+                                            color: $primary;
+                                        }
                                     }
                                 }
                             }
+                            a{
+                                color: $Crayola;
+                            }
                         }
+                    }
+                    .clothes{
+                        height: 78%;
+                        width: 100%;
+                        background-image: url(/src/assets/img/chart/chart.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        object-fit: cover;
                     }
                 }
                 .team{
@@ -71,7 +87,7 @@ a{
                             color: $Dim-Gray;
                         }
                         a{
-                            color: $Dim-Gray;
+                            color: $Crayola;
                         }
                     }
                     .name-list{
@@ -87,7 +103,7 @@ a{
                                 height: 40px;
                                 width: 40px;
                                 border-radius: 50%;
-                                background-color: aqua;
+                                background-color: $maya-blue;
                             }
                             span{
                                 font-size: 16px;
@@ -98,15 +114,16 @@ a{
                     }
                     .view{
                         padding-top: 10px;
+                        position: relative;
                         .text{
                             font-size: 16px;
                             color: $Dark-Gray;
                         }
                         .badges {
+                            position: absolute;
+                            right: 20px;
                             background-color: $primary;
-                            border-radius: 7px;
-                            margin-left: 134px;
-                            line-height: 1;
+                            border-radius: 3px;
                             color: white;
                             padding: 3px 5px;
                             vertical-align: middle;
@@ -120,5 +137,36 @@ a{
             
             }
         }
+        @media screen and (max-width : 992px) {
+            max-width: 100%;
+        }
+        @media screen and (max-width : 768px) {
+            max-width: 100%;
+            .chart-grid{
+                grid-template-columns: 100%;
+                grid-template-rows: repeat(2, 360px);
+                gap: 22px;
+            }
+
+        }
+        @media screen and (max-width : 618px) {
+            padding:0 20px 20px;
+        } 
+        @media screen and (max-width : 576px) {
+         
+        } 
+        @media screen and (max-width : 495px) {
+            .chart-grid{
+                .sale{
+                    .navbar{
+                        .navbar-right{
+                            .days{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        } 
     }
 }

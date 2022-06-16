@@ -15,12 +15,12 @@
 
 </template>
 <script>
-import sidebar from "../component/sidebar.vue"
-import nav from "../component/nav.vue"
-import ecom from "../component/ecom.vue"
-import chart from "../component/chart.vue"
-import order from "../component/order.vue"
-import map from "../component/map.vue"
+import sidebar from "/src/component/sidebar.vue"
+import nav from "/src/component/nav.vue"
+import ecom from "/src/component/ecom.vue"
+import chart from "/src/component/chart.vue"
+import order from "/src/component/order.vue"
+import map from "/src/component/map.vue"
 export default {
     name: "dash-bord",
         components: {
@@ -34,5 +34,5 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-  @import "../assets/view/dash.scss";
+@import 'src/assets/scss/view/dash.scss';
 </style>
