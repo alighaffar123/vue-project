@@ -1,16 +1,16 @@
 <template>
-  <div class="map">
+  <div class="map-section">
     <div class="container">
       <div class="map-grid shadow-lg bg-white">
-        <div class="map-img">
-          <div class="btn-group-vertical button">
-            <button type="button" class="btn btn-outline-secondary">
-              <fa icon="plus" class="plus" />
-            </button>
-            <button type="button" class="btn btn-outline-secondary">
-              <fa icon="minus" class="minus" />
-            </button>
-          </div>
+        <div class="map">
+          <GoogleMap
+              api-key="AIzaSyCZcLipUHRw-52ddpIL6bHLAW9Q5nfYvzo"
+              class="map-style"
+              :center="center"
+              :zoom="15"
+              >
+              <Marker :options="{ position: center }" />
+          </GoogleMap>
         </div>
         <div class="moniter p-3">
             <div class="sales position-relative">
@@ -67,10 +67,20 @@
   </div>
 </template>
 <script>
-export default {
-  name: "map-component",
-};
+import { defineComponent } from 'vue'
+import { GoogleMap, Marker } from 'vue3-google-map'
+
+export default defineComponent({
+  name:"vue-map",
+  components: { GoogleMap, Marker },
+  setup() {
+    const center = { lat: 40.689247, lng: -74.044502 }
+
+    return { center }
+  },
+})
 </script>
+
 <style lang="scss" scoped>
 @import '/src/assets/scss/component/map.scss';
 </style>

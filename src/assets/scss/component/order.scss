@@ -1,6 +1,6 @@
 @import '/src/assets/scss/base/variable.scss';
 @mixin underline {
-    &::after{
+
         content: "";
         display: block;
         width: 100%;
@@ -9,7 +9,7 @@
         position: absolute;
         bottom: -1px;
         left: 0;
-    }    
+      
 }
 @mixin icon-underline {
     content: "";
@@ -35,7 +35,9 @@
                 .recent{
                     .navbar{
                         position: relative;
-                        @include underline;
+                        &::after{
+                           @include underline;
+                        }
                         background-color: $Lotion;
                         height: 50px;
                         .product{
@@ -62,6 +64,16 @@
                     }
                     .table-content{
                         .table{
+                           
+                            .headding{
+                                position: relative;
+                                &::after{
+                                    @include underline;
+                                    width: 97%;
+                                   
+                                }
+                                
+                            }
                             tr{
                                 color: $dark-silver;
                                 th{

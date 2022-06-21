@@ -1,6 +1,6 @@
 @import '/src/assets/scss/base/variable.scss';
 @import '/src/assets/scss/main.scss';
-.map {
+.map-section {
     .container {
         @media screen and (max-width : 1900px) {
             max-width: 100%;
@@ -12,25 +12,10 @@
                 grid-template-columns: 55% 45%;
                 grid-template-rows: 330px;
 
-                .map-img {
-                    position: relative;
-                    background-image: url(/src/assets/img/map/map.jpg);
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-position: center;
-                    object-fit: cover;
-
-                    .button {
-                        position: absolute;
-                        top: 17px;
-                        left: 20px;
-
-                        button {
-                            padding: 1px 4px;
-                            border-radius: 0;
-                            color: #b0b3b3;
-                            border-color: #D2D5D5;
-                        }
+                .map {
+                    .map-style{
+                        height: 100%;
+                        width: 100%;
                     }
                 }
 

@@ -7,7 +7,10 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import App from './App.vue'
 import VueApexCharts from "vue3-apexcharts";
 
+
+
 library.add(fas);
+
 createApp(App)
 .component('fa', FontAwesomeIcon)
 .use(router)
