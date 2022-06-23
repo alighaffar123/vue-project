@@ -1,8 +1,7 @@
 @import '/src/assets/scss/base/variable.scss';
 @import '/src/assets/scss/main.scss';
 .sidebar {
-    display: inline-block;
-    height: 1448px;
+    position: fixed;
     width: 285px;
     background-color: $olive;
 
@@ -21,7 +20,9 @@
 
     .collapes-section {
         padding-top: 30px;
-
+        overflow-x: hidden;
+        overflow-y: scroll;
+        height: 100vh;
         ul {
             list-style-type: none;
             color: $Dark-Gray;
@@ -88,6 +89,42 @@
                     }
 
                 }
+                .side-collapse {
+                    background: $Dark-Charcoal;
+                    transition: all 0.2s ease-in-out;
+                    max-height: 0;
+                    overflow: hidden;
+
+                    li {
+                        a{
+                            font-size: 17px;
+                            font-weight: lighter;
+                            &:hover{
+                                color: white;
+                                
+                            }
+                        }
+                    }
+                }
+                &.show{
+                    &:hover{
+                        background: none;
+                    }
+                    .side-collapse{
+                        margin-top: 11px;
+                        padding: 12px 22px;
+                        max-height: 1000px;
+                        transition: all 0.2s ease-in-out;
+                    }
+                    a{
+                        .collapes-arrow {
+                            transform: rotate(90deg);
+                            transition: all 0.2s ease-in-out;
+                        }
+                    }
+
+
+                }
             }
             .milestone{
                 padding: 60px 19px 20px;
@@ -103,7 +140,6 @@
                 .progress-bar{
                     width: 55%;
                     background-color: $Dark-Lemon;
-
                 }
 
             }
