@@ -19,7 +19,7 @@
           </a>
           <ul class="side-collapse">
             <li class="mb-3">
-              <a href="https://meet.google.com/">
+              <a href="https://meet.google.com/" target="_blank">
                 <span>option 1</span>
               </a>
             </li>
@@ -40,7 +40,7 @@
           </a>
           <ul class="side-collapse">
             <li class="mb-3">
-              <a href="https://meet.google.com/">
+              <a href="https://meet.google.com/" target="_blank">
                 <span>option 1</span>
               </a>
             </li>
@@ -61,7 +61,7 @@
           </a>
           <ul class="side-collapse">
             <li class="mb-3">
-              <a href="https://meet.google.com/">
+              <a href="https://meet.google.com/" target="_blank">
                 <span>option 1</span>
               </a>
             </li>
@@ -86,7 +86,7 @@
           </a>
           <ul class="side-collapse">
             <li class="mb-3">
-              <a href="https://meet.google.com/">
+              <a href="https://meet.google.com/" target="_blank">
                 <span>option 1</span>
               </a>
             </li>
@@ -107,7 +107,7 @@
           </a>
           <ul class="side-collapse">
             <li class="mb-3">
-              <a href="https://meet.google.com/">
+              <a href="https://meet.google.com/" target="_blank">
                 <span>option 1</span>
               </a>
             </li>
@@ -128,7 +128,7 @@
           </a>
           <ul class="side-collapse">
             <li class="mb-3">
-              <a href="https://meet.google.com/">
+              <a href="https://meet.google.com/" target="_blank">
                 <span>option 1</span>
               </a>
             </li>
@@ -150,7 +150,7 @@
           </a>
           <ul class="side-collapse">
             <li class="mb-3">
-              <a href="https://meet.google.com/">
+              <a href="https://meet.google.com/" target="_blank">
                 <span>option 1</span>
               </a>
             </li>
@@ -171,7 +171,7 @@
           </a>
           <ul class="side-collapse">
             <li class="mb-3">
-              <a href="https://meet.google.com/">
+              <a href="https://meet.google.com/" target="_blank">
                 <span>option 1</span>
               </a>
             </li>
@@ -192,7 +192,7 @@
           </a>
           <ul class="side-collapse">
             <li class="mb-3">
-              <a href="https://meet.google.com/">
+              <a href="https://meet.google.com/" target="_blank">
                 <span>option 1</span>
               </a>
             </li>
@@ -219,7 +219,7 @@
           </a>
           <ul class="side-collapse">
             <li class="mb-3">
-              <a href="https://meet.google.com/">
+              <a href="https://meet.google.com/" target="_blank">
                 <span>option 1</span>
               </a>
             </li>
@@ -241,7 +241,7 @@
           </a>
           <ul class="side-collapse">
             <li class="mb-3">
-              <a href="https://meet.google.com/">
+              <a href="https://meet.google.com/" target="_blank">
                 <span>option 1</span>
               </a>
             </li>
@@ -262,7 +262,7 @@
           </a>
           <ul class="side-collapse">
             <li class="mb-3">
-              <a href="https://meet.google.com/">
+              <a href="https://meet.google.com/" target="_blank">
                 <span>option 1</span>
               </a>
             </li>

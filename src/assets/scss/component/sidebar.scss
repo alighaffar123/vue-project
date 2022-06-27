@@ -17,12 +17,17 @@
         }
 
     }
-
+    .collapes-section::-webkit-scrollbar {
+        width: 0;
+      }
+   
     .collapes-section {
         padding-top: 30px;
         overflow-x: hidden;
         overflow-y: scroll;
         height: 100vh;
+        
+          
         ul {
             list-style-type: none;
             color: $Dark-Gray;
@@ -94,6 +99,7 @@
                     transition: all 0.2s ease-in-out;
                     max-height: 0;
                     overflow: hidden;
+                  
 
                     li {
                         a{
