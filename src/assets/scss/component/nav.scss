@@ -82,19 +82,54 @@
                         padding: 0 19px;
         
                         a {
+                            position: relative;
                             color: $Davy-Grey;
                             font-size: 21px;
+                                .badge{
+                                    padding: 2px 9px;
+                                    font-size: 14px;
+                                    background-color: $Vivid;
+                                }
                         }
-        
-                        .bell-badge {
-                            position: relative;
-                            .badge{
-                                padding: 2px 9px;
-                                font-size: 14px;
-                                background-color: $Vivid;
+                        .notification-collapse {
+                            list-style-type: none;
+                            position: absolute;
+                            width: 350px;
+                            max-height: 0;
+                            transition: all 0.1s ease-in-out;
+                            overflow: hidden;
+                          
+                            li {
+                                a{
+                                    font-size: 17px;
+                                    font-weight: lighter;
+                                    &:hover{
+                                        color: $outer-space;
+                                        font-weight: bold;
+                                        
+                                    }
+                                }
                             }
                         }
+                        &.show{
+                            
+                            .notification-collapse{
+                                bottom: -110px;
+
+                                border-radius: 5px;
+                                padding: 12px 22px;
+                                max-height: 1000px;
+                                transition: all 0.1s ease-in-out;
+                            }
+                            a{
+                                .collapes-arrow {
+                                    transform: rotate(90deg);
+                                    transition: all 0.2s ease-in-out;
+                                }
+                            }
         
+        
+                        }
                         &::after {
                             @include nav-line;
                             top: -14px;

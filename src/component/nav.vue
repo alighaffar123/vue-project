@@ -20,8 +20,9 @@
         </div>
        <div class="d-flex nav-right align-items-center">
          <div class="bell">
-          <a class="bell-badge" href="">
-            <fa class="bell-badge" icon="bell" />
+          <a class="bell-badge" href=""
+          @click.prevent="notification($event)">
+            <fa class="bell-icon" icon="bell" />
             <span
               class="
                 position-absolute
@@ -35,6 +36,19 @@
               8
             </span>
           </a>
+           <ul class="shadow-lg bg-white notification-collapse">
+            <li class="mb-3">
+              <a href="https://meet.google.com/" target="_blank">
+                <span>Notification 1</span>
+              </a>
+            </li>
+           <li>
+              <a href="">
+                <span>Notification 2</span>
+              </a>
+            </li>
+          </ul>
+
         </div>
         <div class="envelope ">
           <a class="abc" href="">
@@ -69,6 +83,17 @@
 <script>
 export default {
   name: "nav-bar",
+   methods: {
+    notification(event) {
+      const active = document.querySelectorAll(".show");
+      active.forEach((node) => {
+        if (node != event.currentTarget.parentNode) {
+          node.classList.remove("show");
+        }
+      });
+      event.currentTarget.parentNode.classList.toggle("show");
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>
